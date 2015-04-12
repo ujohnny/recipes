@@ -13,4 +13,6 @@ PV = "1.0.0+gitr${SRCPV}"
 
 S = "${WORKDIR}/git"
 
+EXTRA_OECMAKE_prepend = "-DTRIKINC=${STAGING_INCDIR}/trik/trikControl -DTRIKLIB=${STAGING_LIBDIR}/trik"
+
 inherit catkin
